@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>📋 Task Manager</h1>
+    <p>Create, complete, and delete your daily tasks with ease.</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>📘 How to Use</h2>
+        <p>This to-do app helps you:</p>
+        <ul>
+          <li>➕ Add a task</li>
+          <li>✅ Mark it complete by clicking it</li>
+          <li>🗑 Delete with the ❌ icon</li>
+          <li>📦 Completed tasks are moved</li>
+        </ul>
+      </aside>
+
+      <section class="todo-section">
+        <h2>🚀 Get Things Done</h2>
+        <div class="input-group">
+          <input type="text" id="taskInput" placeholder="What do you want to do?" />
+          <button id="addBtn">Add Task</button>
+        </div>
+
+        <div class="task-columns">
+          <div class="task-container">
+            <h3>🕒 Pending Tasks</h3>
+            <ul id="taskList"></ul>
+          </div>
+          <div class="task-container">
+            <h3>✅ Completed Tasks</h3>
+            <ul id="completedList"></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p> Built By Gaurav Maurya using HTML, CSS, and JavaScript | Internship Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
